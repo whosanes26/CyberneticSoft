@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberneticSoft | Intelligent Solutions for Modern Challenges</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #0a192f;
+            color: #8892b0;
+        }
+
+        /* Navigation */
+        .navbar {
+            padding: 1.5rem 5%;
+            background: rgba(10, 25, 47, 0.95);
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            color: #64ffda;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0 5%;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            color: #ccd6f6;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            color: #64ffda;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 5rem 5%;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .service-card {
+            background: #112240;
+            padding: 2rem;
+            border-radius: 4px;
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+
+        /* Add more sections for Contact, About, etc. */
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="#" class="logo">CyberneticSoft</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Clarity in Complexity</h1>
+            <p>Human Logic, Cybernetic Precision</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <h2>Our Solutions</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>AI Solutions</h3>
+                <p>Transformative machine learning models and predictive analytics</p>
+            </div>
+            <div class="service-card">
+                <h3>Cybersecurity</h3>
+                <p>End-to-end protection for digital assets and infrastructure</p>
+            </div>
+            <!-- Add other service cards -->
+        </div>
+    </section>
+
+    <script>
+        // Add interactive features
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
